@@ -2,13 +2,14 @@
 <recipe>
     <#include "../common/recipe_manifest.xml.ftl" />
 
-    <#include "activity_layout_recipe.xml.ftl" />
+    <instantiate from="src/app_package/layout/activity_layout.xml.ftl"
+                       to="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 
     <instantiate from="src/app_package/classes/Activity.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/view/impl/${activityClass}.java" />
+      to="${escapeXmlAttribute(srcOut)}/view/${functionFolderName}/${activityClass}.java" />
 
     <instantiate from="src/app_package/classes/View.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/view/${viewClass}.java" />
+      to="${escapeXmlAttribute(srcOut)}/view/${functionFolderName}/iview/${viewClass}.java" />
 
     <instantiate from="src/app_package/classes/Presenter.java.ftl"
       to="${escapeXmlAttribute(srcOut)}/presenter/${presenterClass}.java" />

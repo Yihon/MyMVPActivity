@@ -1,9 +1,10 @@
-package ${packageName}.view.impl;
+package ${packageName}.view.${functionFolderName};
 
 
 import ${packageName}.R;
 import ${packageName}.presenter.${presenterClass};
-
+import ${packageName}.view.${functionFolderName}.iview.${viewClass};
+import leedarson.base.BaseActivity;
 
 public class ${activityClass} extends BaseActivity implements ${viewClass} {
 

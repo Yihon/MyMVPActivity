@@ -1,6 +1,8 @@
 package ${packageName}.presenter;
 
-import ${packageName}.view.${viewClass};
+import ${packageName}.view.${functionFolderName}.iview.${viewClass};
+import ${packageName}.view.${functionFolderName}.${activityClass};
+import leedarson.base.BasePresenter;
 
 public class ${presenterClass} extends BasePresenter<${viewClass}, ${activityClass}> {
 

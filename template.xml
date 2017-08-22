@@ -41,6 +41,12 @@
         type="string"
         constraints="package"
         default="com.mycompany.myapp" />
+    <parameter
+        id="functionFolderName"
+        name="function Folder name"
+        type="string"
+        constraints="class|nonempty|unique"
+        help="功能名称目录" />
 
     <parameter
         id="viewClass"
